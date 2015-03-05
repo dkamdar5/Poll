@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -36,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 )
 
 MIDDLEWARE_CLASSES = (
